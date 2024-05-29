@@ -182,6 +182,6 @@ variable "ignore_changes_global_secondary_index" {
 
 variable "aws_region" {
   description = "Whether to ignore changes lifecycle to global secondary indices, useful for provisioned tables with scaling"
-  type        = bool
+  type        = string
   default     = "us-east-1"
 }
