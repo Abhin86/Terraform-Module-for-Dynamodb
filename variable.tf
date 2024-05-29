@@ -16,6 +16,18 @@ variable "attributes" {
   default     = []
 }
 
+variable "AWS_SECRET_KEY" {
+  description = "The AWS secret key"
+  type        = string
+  sensitive   = true
+}
+
+variable "AWS_ACCESS_KEY" {
+  description = "The AWS Access key"
+  type        = string
+  sensitive   = true
+}
+
 variable "hash_key" {
   description = "The attribute to use as the hash (partition) key. Must also be defined as an attribute"
   type        = string
