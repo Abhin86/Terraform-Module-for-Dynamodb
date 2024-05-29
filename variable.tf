@@ -7,7 +7,7 @@ variable "create_table" {
 variable "name" {
   description = "Name of the DynamoDB table"
   type        = string
-  default     = null
+  default     = "db"
 }
 
 variable "attributes" {
