@@ -1,8 +1,6 @@
 module "dynamodb" {
     source = "./modules/dynamodb"
   name           = "my-table"
-  read_capacity  = 20
-  write_capacity = 20
   hash_key       = "BrandName"
   range_key      = "ModelNumber"
 
