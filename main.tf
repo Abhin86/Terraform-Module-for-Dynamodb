@@ -3,7 +3,7 @@ module "dynamodb" {
   name      = "my-table"
   hash_key  = "BrandName"
   range_key = "ModelNumber"
-
+  point_in_time_recovery_enabled = true
   attributes = [
     {
       name = "BrandName"
